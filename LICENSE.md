@@ -1,6 +1,9 @@
+Copyright for portions of this Fork are held by Nauck IT KG, 2012 - 2014 as part of project Portable.Licensing. 
+All other copyright for this Fork are held by pm-kuerten, 2024-2024.
+
 The MIT License
 
-Copyright (c) 2012 - 2014 Nauck IT KG		http://www.nauck-it.de
+Copyright (c) 2024 - 2024 pm-dkuerten
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

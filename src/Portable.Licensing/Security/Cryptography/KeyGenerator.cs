@@ -58,7 +58,7 @@ namespace Portable.Licensing.Security.Cryptography
         /// - 521</remarks>
         /// <param name="keySize">The key size.</param>
         public KeyGenerator(int keySize)
-            : this(keySize, SecureRandom.GetSeed(32))
+            : this(keySize, SecureRandom.GetNextBytes(SecureRandom.GetInstance("SHA256PRNG"),  32))
         {
         }
 

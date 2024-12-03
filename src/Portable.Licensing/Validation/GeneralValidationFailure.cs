@@ -1,19 +1,31 @@
-﻿namespace Portable.Licensing.Validation;
-
-/// <summary>
-/// Represents a general validation failure.
-/// </summary>
-public class GeneralValidationFailure(string message, string howToResolve = "") : IValidationFailure
+﻿namespace Portable.Licensing.Validation
 {
-    #region Properties
     /// <summary>
-    /// Gets or sets a message that describes the validation failure.
+    /// Represents a general validation failure.
     /// </summary>
-    public string Message { get; set; } = message;
+    public class GeneralValidationFailure : IValidationFailure
+    {
+        #region Constructors
+        /// <summary>
+        /// Represents a general validation failure.
+        /// </summary>
+        public GeneralValidationFailure(string message, string howToResolve = "")
+        {
+            Message = message;
+            HowToResolve = howToResolve;
+        }
+        #endregion
 
-    /// <summary>
-    /// Gets or sets a message that describes how to recover from the validation failure.
-    /// </summary>
-    public string HowToResolve { get; } = howToResolve;
-    #endregion
+        #region Properties
+        /// <summary>
+        /// Gets or sets a message that describes the validation failure.
+        /// </summary>
+        public string Message { get; set; }
+
+        /// <summary>
+        /// Gets or sets a message that describes how to recover from the validation failure.
+        /// </summary>
+        public string HowToResolve { get; }
+        #endregion
+    }
 }

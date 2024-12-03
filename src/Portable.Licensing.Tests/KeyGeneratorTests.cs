@@ -9,8 +9,8 @@ public class KeyGeneratorTests
     public void Ensure_To_Not_Generate_Identical_Keys()
     {
         const string passPhrase = "test";
-        HashSet<string> privKeySet = [];
-        HashSet<string> pubKeySet = [];
+        HashSet<string> privKeySet = new();
+        HashSet<string> pubKeySet = new();
 
         // add well known key
         privKeySet.Add(
